@@ -1,0 +1,113 @@
+:root {
+    --white: #ffffff;
+    --light-gray: #f0f0f3;
+    --dark-gray: #2e2e3e;
+    --dark-bg: #1a1a2e;
+    --light-bg: ##c9d6ff;
+    --light-shadow: rgba(0, 0, 0, 0.15);
+    --dark-shadow: rgba(0, 0, 0, 0.2);
+    --highlight: #f1c40f;
+    --text-light: #e4e6eb;
+    --text-dark: #333;
+}
+
+body.bg-gradient {
+    background: linear-gradient(to right, var(--light-bg), #e2e2e2);
+}
+
+.card,
+.main-card,
+.neumorphic-button,
+.book-card {
+    background: var(--light-gray);
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px var(--light-shadow), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card,
+.book-card,
+.main-card {
+    padding: 15px;
+}
+
+.main-card {
+    background: rgba(var(--white), 0.9);
+}
+
+.neumorphic-button,
+.neumorphic-input,
+.book-card {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.book-card {
+    margin-bottom: 15px;
+}
+
+.neumorphic-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.neumorphic-input,
+.neumorphic-button {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--light-shadow), -5px -5px 10px rgba(255, 255, 255, 0.7);
+    transform: translateY(-2px);
+}
+
+.theme-dark {
+    background-color: var(--dark-bg) !important;
+    color: var(--text-light) !important;
+}
+
+.theme-dark .card,
+.theme-dark .book-card,
+.theme-dark .main-card {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    box-shadow: 5px 5px 15px var(--dark-shadow), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .neumorphic-button,
+.theme-dark .neumorphic-input {
+    background: var(--dark-gray);
+    color: var(--text-light);
+}
+
+.theme-dark .neumorphic-button:hover {
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3), -3px -3px 7px rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .btn-toggle {
+    color: var(--highlight);
+}
+
+.theme-dark .bi-moon-fill {
+    display: none;
+}
+
+.theme-light .bi-sun-fill {
+    display: none;
+}
+
+.theme-light .btn-toggle {
+    color: var(--text-dark);
+}
+
+.shadow-neumorphic {
+    box-shadow: 2px 2px 10px var(--dark-shadow), -2px -2px 10px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.swal2-popup {
+    font-size: 1.1rem;
+    border-radius: 12px
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease-in-out;
+}
